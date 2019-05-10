@@ -1,5 +1,6 @@
 CC ?=clang
-CFLAGS=-O0 -g -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include
+#CFLAGS=-O0 -g -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include
+CFLAGS=-O2 -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include
 EXECUTABLE=main
 LIBS=-lfcgi -lpthread -lcurl
 PKGCONF=pkg-config
