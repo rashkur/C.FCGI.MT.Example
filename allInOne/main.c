@@ -19,12 +19,11 @@
 #include <curl/curl.h>
 
 // ----------------------------------------------------------------------------
-
-// принимать только запросы GET, на остальные отвечать текстом "Cant't process query type $t" $t - тип запроса
-// /query1?arg1=xxxx&arg2=yyyyy&arg3=zzzzzz - вернуть значение arg2 перевернутое назад
-// /query2?arg1=xxxx&arg2=yyyyy&arg3=zzzzzz - вернуть arg1(uppercase)+" "+arg3(lowercase)
-// /query3?arg1=xxxx&arg2=yyyyy&arg3=zzzzzz - вернуть YES если arg3 содержит подстроку test123 без учета регистра, NO в противном случае
-
+//
+// /query1?arg1=xxxx&arg2=yyyyy&arg3=zzzzzz - returning arg2 reversed
+// /query2?arg1=xxxx&arg2=yyyyy&arg3=zzzzzz - returning arg1(uppercase)+" "+arg3(lowercase)
+// /query3?arg1=xxxx&arg2=yyyyy&arg3=zzzzzz - returning YES if arg3 сontains test123 case insesitive or NO in other cases
+//
 // ----------------------------------------------------------------------------
 
 char *g_socket_str = NULL, *g_logfile_name = NULL;
