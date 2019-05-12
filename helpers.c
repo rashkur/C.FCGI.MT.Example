@@ -26,7 +26,7 @@ char *str_tolow(const char *str)
 void createpidf(const char *pid)
 {
     errno = 0;
-    FILE *pidfile = fopen(pid, "w+");
+    FILE *pidfile = fopen(pid, "w");
     if (pidfile < 0 || errno)
     {
         log_msg(0, "Opening pidfile error");
