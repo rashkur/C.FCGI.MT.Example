@@ -17,6 +17,7 @@
 #include <errno.h>
 
 #include <unistd.h>
+#include <sys/stat.h>
 
 #include "config.h"
 
