@@ -5,5 +5,5 @@ Can process queries like ``` /query1?arg1======123qwe게&arg2=145%206АДЖИ가
 and respect repeating args
   
   
-Code in allInOne is more simple and efficent but cannot process utf-8 and can contain bugs.
+Code in allInOne is more simple and efficent but cannot process utf-8 and may contain some bugs.
  
